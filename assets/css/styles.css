@@ -212,7 +212,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 417px) {
   .home__social {
     display: flex;
     flex-direction: row;
@@ -240,7 +240,7 @@ img {
   bottom: 0;
   width: 200px;
 }
-@media screen and (max-width: 367px){
+@media screen and (max-width: 417px){
   .home__img {
     position:relative;
     left:0;
