@@ -240,6 +240,16 @@ img {
   bottom: 0;
   width: 200px;
 }
+@media screen and (max-width: 367px){
+  .home__img {
+    position:relative;
+    left:0;
+    bottom: 0;
+    width: 200px;
+  }
+
+}
+
 
 .home__blob {
   fill: var(--first-color);
