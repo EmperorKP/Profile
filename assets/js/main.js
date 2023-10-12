@@ -46,12 +46,42 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2000,
-    delay: 200,
+    delay: 150,
 //     reset: true
 });
-
+var typingEffect = new Typed(".multiText",{
+    strings : ["Master Mind","Coder","Software Developer", "Designer", "Photographer"],
+    loop : true,
+    typeSpeed : 80,
+    backSpeed : 50,
+})
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+/*===== dark mode =====*/
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+const link1 = document.getElementById('name');
+const link2 = document.getElementById('archive');
+const link3 = document.getElementById('about');
+const moon= document.getElementsByClassName('')
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        toggle.style.color='black';
+        body.style.background = 'white';
+        body.style.color = 'rgb(17,16,16)';
+      
+        
+    }else{
+        body.style.background = 'rgb(17,16,16)';
+        toggle.style.color='yellow';
+        body.style.color = 'white';
+    
+        body.style.transition = '0.8s';
+        
+    }
+});
